@@ -10,7 +10,7 @@ const About = () => {
         height: '100vh'
       }}
     >
-      <h1>We aim to make job searching easier for you.</h1>
+      <h1>Job Searching. For Tech. Simplified.</h1>
     </div>
   );
 };
