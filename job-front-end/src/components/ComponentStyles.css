@@ -1,0 +1,17 @@
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+
+

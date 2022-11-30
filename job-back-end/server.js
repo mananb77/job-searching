@@ -14,7 +14,6 @@ const API_KEY = "";
 
 // work on webscraping
 
-
 // work on API calls
 app.get("/info", async function(req, res) {
     const browser = await puppeteer.launch()

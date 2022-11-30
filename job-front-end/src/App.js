@@ -1,6 +1,7 @@
 import logo from "./images/job-search.png";
 import "./App.css";
 import headerImg from "./images/extch.png";
+import SearchBar from "./components/SearchBar.js"
 
 // This is the search bar functionality
 // https://github.com/kbhavya1/reactjs-search-filter/blob/master/src/App.js
@@ -58,11 +59,7 @@ function App() {
       </div>
 
       {/* Search Bar */}
-      {/* TBD */}
-      <div>
-        <input class="search-bar" type="textbox"></input>
-        <p>Search</p>
-      </div>
+      <SearchBar/>
 
       
       {/* Body Table */}/
@@ -70,15 +67,14 @@ function App() {
       <table class="blueTable">
         <thead>
           <tr>
-            <th>head1</th>
-            <th>head2</th>
-            <th>head3</th>
-            <th>head4</th>
+            <th>Company Name</th>
+            <th>Job Title</th>
+            <th>Location</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
-            <td colspan="4">
+            <td colspan="3">
               <div class="links">
                 <a href="#">&laquo;</a>{" "}
                 <a class="active" href="#">
@@ -95,25 +91,21 @@ function App() {
             <td>cell1_1</td>
             <td>cell2_1</td>
             <td>cell3_1</td>
-            <td>cell4_1</td>
           </tr>
           <tr>
             <td>cell1_2</td>
             <td>cell2_2</td>
             <td>cell3_2</td>
-            <td>cell4_2</td>
           </tr>
           <tr>
             <td>cell1_3</td>
             <td>cell2_3</td>
             <td>cell3_3</td>
-            <td>cell4_3</td>
           </tr>
           <tr>
             <td>cell1_4</td>
             <td>cell2_4</td>
             <td>cell3_4</td>
-            <td>cell4_4</td>
           </tr>
         </tbody>
       </table>
@@ -121,6 +113,10 @@ function App() {
       <div>
         <br></br>
       </div>
+
+      {/* Footer */}
+      <div class='footer'></div>
+
     </>
   );
 }
