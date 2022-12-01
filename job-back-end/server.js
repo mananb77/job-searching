@@ -7,12 +7,10 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 /* TODO: Replace this with your own API key */
 const API_KEY = "";
-
-// work on webscraping
 
 // work on API calls
 app.get("/info", async function(req, res) {
