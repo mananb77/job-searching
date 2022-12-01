@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Table from "./components/Table";
 /*
 import Table from "./components/Table";
 import SearchBar from "./components/SearchBar";
@@ -18,7 +19,7 @@ function App() {
       {/* <SearchBar /> */}
 
       {/* Table */}
-      {/* <Table /> */}
+      <Table />
 
       {/* Footer */}
       <Footer />
