@@ -3,39 +3,6 @@ import "./App.css";
 import headerImg from "./images/extch.png";
 import SearchBar from "./components/SearchBar.js"
 
-// This is the search bar functionality
-// https://github.com/kbhavya1/reactjs-search-filter/blob/master/src/App.js
-
-// class App extends Component {
-//   render(){
-//     const styleInfo = {
-//       paddingRight:'10px'
-//     }
-//     const elementStyle ={
-//       border:'solid',
-//       borderRadius:'10px',
-//       position:'relative',
-//       left:'10vh',
-//       height:'3vh',
-//       width:'20vh',
-//       marginTop:'5vh',
-//       marginBottom:'10vh'
-//     }
-//     const items = Information.map(data=>{
-//       return(
-//       <div>
-//         <ul>
-//           <li style={{position:'relative',left:'10vh'}}>
-//             <span style={styleInfo}>{data.name}</span>
-//             <span style={styleInfo}>{data.age}</span>
-//             <span style={styleInfo}>{data.country}</span>
-//           </li>
-//         </ul>
-//       </div>
-//       )
-//     })
-// }
-
 function App() {
   return (
     <>
