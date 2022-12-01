@@ -1,11 +1,11 @@
 import "./ComponentStyles.css";
-import headerImg from "src/images/extch.png";
+import headerImg from "./images/extch.png";
 
 const Header = () => {
   return (
     <div>
       <center>
-        <img class="img" src={headerImg} alt="ExTech logo" width={300}></img>
+        <img class="img" src={headerImg} alt="ExTech Job Search Logo" width={300}></img>
       </center>
       <div class="header">
         <center>

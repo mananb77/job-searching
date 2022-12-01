@@ -5,9 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import 'bootstrap/dist/css/bootstrap.css';
 
-import headerImage from "./images/extch.png";
-import logo from "./images/extech-logo.png";
-import icon from "./images/job-search.png";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
