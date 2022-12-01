@@ -8,8 +8,6 @@ import SearchBar from "./components/SearchBar";
 These two were not working
 */
 
-
-
 function App() {
   return (
     <>
@@ -18,15 +16,12 @@ function App() {
 
       {/* Search Bar */}
       {/* <SearchBar /> */}
-   
 
       {/* Table */}
       {/* <Table /> */}
 
-
       {/* Footer */}
       <Footer />
-
     </>
   );
 }
