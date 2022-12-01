@@ -1,9 +1,12 @@
 import "./App.css";
-import Header from "./components/Header.js"
-import SearchBar from "./components/SearchBar.js";
-import Table from "./components/Table.js"
-import Footer from "./components/Footer.js"
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+/*
+import Table from "./components/Table";
+import SearchBar from "./components/SearchBar";
 
+These two were not working
+*/
 
 function App() {
   return (
@@ -12,10 +15,10 @@ function App() {
       <Header />
 
       {/* Search Bar */}
-      <SearchBar />
+      {/* <SearchBar /> */}
 
-      {/* Table */}/
-      <Table />
+      {/* Table */}
+      {/* <Table /> */}
 
       {/* Footer */}
       <Footer />
