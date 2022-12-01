@@ -4,6 +4,7 @@ import SearchBar from "./components/SearchBar.js";
 import Table from "./components/Table.js"
 import Footer from "./components/Footer.js"
 
+
 function App() {
   return (
     <>

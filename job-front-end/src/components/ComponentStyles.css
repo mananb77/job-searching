@@ -71,5 +71,5 @@ h3 {
 }
 
 .footer {
-  background-color: 
+  background-color: transparent; /* added for now */
 }
