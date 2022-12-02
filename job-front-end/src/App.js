@@ -13,8 +13,12 @@ function App() {
       <Header />
 
       {/* Search Bar */}
-      <SearchBar/>
+      <div class="chow">
+        <input type="text" id="myInput" onChange= {myFunction()} placeholder="Search for names" value={search.input} title="Type in a name"></input>
+      </div>
+      
       <TableRows/>
+      <Footer></Footer>
 
     </>
   );
@@ -31,11 +35,12 @@ function TableRows() {
     })
     
   },[])
+  
 
   return (
     <>
       <center>
-      <table class="blueTable">
+      <table class="blueTable" id="myTable">
       <thead>
           <tr>
             <th>Company Name</th>
@@ -58,4 +63,26 @@ function TableRows() {
     </>
     );
   }
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    if (!(input == null)) {
+      filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+    }
+      }       
+    }
+  }
+
+
 export default App;

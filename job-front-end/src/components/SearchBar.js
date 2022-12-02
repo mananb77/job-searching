@@ -4,15 +4,11 @@ import "./ComponentStyles.css";
 
 // Check if the next line is correct
 // import { APIData } from "/job-searching/job-back-end/server.js"
-const SearchBar = ({ }) => {
+const SearchBar = ({}) => {
   return (
-    <div class="search-bar-container">
-      <p>Search here:</p>
-      <br />
-      <input type="search" 
-        class="search-bar" 
-        placeholder="Search"></input>
-    </div>
+    <div class="chow">
+        <input type="search" id="myInput" onkeyup= {myFunction()} placeholder="Search for names" title="Type in a name"></input>
+      </div>
   )
 }
 

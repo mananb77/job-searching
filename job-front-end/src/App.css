@@ -1,113 +1,50 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  /* background-image: url('/css/searchicon.png'); */
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 40%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.header {
-  margin-top: -5%;
-}
-
-table.blueTable {
-  /* border: 1px solid #1C6EA4; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; 
-  background-color: #EEEEEE;
-  width: 80%;
-  text-align: left;
+#myTable {
   border-collapse: collapse;
-  align-self: center;
+  width: 90%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
 }
-table.blueTable td, table.blueTable th {
-  border: 1px solid #AAAAAA;
-  padding: 3px 2px;
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
 }
-table.blueTable tbody td {
-  font-size: 13px;
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
 }
-table.blueTable tr:nth-child(even) {
-  background: #D0E4F5;
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
 }
+
 table.blueTable thead {
   background: #7ad420;
 }
-table.blueTable thead th {
-  font-size: 15px;
-  font-weight: bold;
-  color: #FFFFFF;
-  border-left: 2px solid #D0E4F5;
-}
 
-table.blueTable thead th:first-child {
-  border-left: none;
+.chow {
+  display: flex;
+  justify-content: center;
 }
-
-table.blueTable tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background: #D0E4F5;
-}
-
-table.blueTable tfoot td {
-  font-size: 14px;
-}
-table.blueTable tfoot .links {
-  text-align: right;
-}
-table.blueTable tfoot .links a{
-  display: inline-block;
-  background: #000000;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
-
